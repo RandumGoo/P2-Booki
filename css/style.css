@@ -525,6 +525,25 @@ footer > div > ul {
         width: 100%;
     }
 
+    .heb-card1, .heb-card2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .heb-card1 a, .heb-card2 a{
+        width: 100%;
+    }
+
+    .heb-card1 .card-title, .heb-card1 .card-title {
+        font-size: 14px;
+    }
+
+    .heb-card1 .card-subtitle, .heb-card1 .card-subtitle {
+        font-size: 13px;
+    }
+
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -547,9 +566,330 @@ footer > div > ul {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .card-act img { 
+        height: 200px;
+    }
 }
+
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        width: 100%;
+        padding: 0px;
+        box-sizing: border-box;
+        border-radius: 0%;
+    }
+
+
+/*** HEADER MOBILE ***/
+.header {display: none;}
+
+#headerMob {
+    display: contents;
+}
+
+.headerMobile {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#logoMob {
+    align-items: center;
+    max-width: 100%;
+    width: 100px;
+    padding: 45px;
+    margin: 0 250px;
+}
+
+.headerMobile a {
+    color: #0065FC;
+    transition: 0.1s ease;
+
+}
+
+.navMobile{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    width: 100%;
+    height: 50px;
+}
+
+.navMobile > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.navMobile > ul > li {
+    flex-grow: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f2f2f2;
+    transition: 0.1s ease;
+    width: 50%;
+
+}
+
+.navMobile > ul > li:hover {
+    border-bottom: #0065FC solid 2px;
+}
+
+.navMobile > ul > li a:hover {
+    color: #0065FC;
+} 
+
+    /*** SECTION INFO MOBILE***/
+.info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 45px;
+    padding: 20px;
+    width: auto;
+  }
+
+
+  /*** HEADLINE ***/
+
+  .headline {
+    font-size: 140%;
+  }
+
+  /*** SEARCH BAR MOBILE ***/
+.boutton-rech{
+    display: none;
+  }
+  .search-bar {
+    display: flex;
+    font-size: 200%;
+    height: 80px;
+    margin-top: auto;
+  }
+
+  #icon-rech {
+    width: 100px;
+    height: 80px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  form > input {
+    width: 100%;
+    height: 80px;
+    padding-left: 30px;
+  }
+  
+  .boutton-rech-mobile{
+    display: block;
+    color: #fff;
+    border: 0;
+    background-color: #0065FC;
+    cursor: pointer;
+    margin-left: -10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 23px;
+  }
+
+  form > input::placeholder{
+    font-weight: 700;
+    font-size: 165%;
+
+}
+  
+  
+
+  
+
+  /*** FILTRE MOBILE ****/
+
+  .filterbar {
+    font-size: larger;
+    justify-content: space-between;
+    font-size: 100%;
+  }
+
+  .titre-filtre {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 165%;
+    margin: 0%;
+  }
+
+  .box-filtre {
+    font-size: 100%;
+    height: 18px;
+    font-weight: bold;
+    border: 2px solid #D9D9D9;
+    width: 30%;
+    margin-top: 32px;
+    margin-bottom: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 20px;
+  }
+
+  .box-filtre h5 {
+    padding: 13px;
+  }
+
+  .infobar i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    height: 28px;
+    width: 35px;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+    margin: 12px;
+  }
+
+  .info-txt {
+    font-size: 144%;
+  }
+
+.hebergements-and-populaires section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px;
+    
+}
+.populaires {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    margin-bottom: 50px;
+    border-radius: 0px;
+}
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+
+}
+.populaires-cards a {
+    width: 100%;
+}
+.h3 {
+    font-size: 20px;
+}
+
+.populaires-cards .card-title {
+    font-size: 150%;
+    padding-left: 0px;
+    margin-right: 5px;
+  }
+  
+  .populaires-cards .card-subtitle {
+    font-size: 147%;
+  }
+  .populaires-cards .card-rating {
+    margin-bottom: 5px;
+    font-size: 150%;
+  }
+
+  .populaires-cards img {
+    height: 206px;
+  }
+
+.hebergements {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+    border-radius: 0px;
+    background-color: white;
+}
+
+.heb-card1, .heb-card2{
+    flex-direction: column;
+    width: 333%;
+}
+.box-heb{
+    flex-direction: column;
+}
+.heb-card1 img, .heb-card2 img {
+    width: 100%;
+    height: 200px;
+}
+.card a {
+    width: 100%;
+}
+.heb-card1 .card-title, .heb-card2 .card-title {
+    font-size: 166%;
+    padding-left: 0px;
+}
+.heb-card1 .card-subtitle, .heb-card2 .card-subtitle {
+    font-size: 147%;
+}
+.heb-card1 .card-content, .heb-card2 .card-content{
+    gap: 10px;
+}
+
+.section-title {
+    font-size: 30px;
+  }
+
+
+
+
+/*** ACTIVITE MOBILE***/
+.act-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+
+   }
+   .card-act img{
+    width: 100%;
+    height: 200px;
+   }
+    .card-title {
+    font-size: 24px;
+  }
+  .activite {
+    padding: 30px;
+    width: 90%;
+  }
+  .act-title {
+    font-size: 30px;
+  }
+
+
+
+/*** FOOTER MOBILE ***/
+    footer{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    font-size: 124%;
+    }
+    footer .box {
+        background-color: #F2F2F2;
+        
+    }
 }
